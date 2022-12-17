@@ -102,7 +102,7 @@ body{
     color: var(--primary-text-color);   
     transition-property: color;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--accent-color-blue);
@@ -139,7 +139,7 @@ body{
     fill: var(--tittle-text-color);
     transition-property: color, fill;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav .link:hover, .auth-nav .link:focus{
     color: var(--accent-color-blue);
@@ -200,7 +200,7 @@ body{
     line-height: 1.88;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover, .hero-button:focus {
     background-color: #188CE8;
@@ -271,7 +271,7 @@ body{
     border-radius: 50%;
     transition-property: background-color, fill;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover, .socials-link:focus {
     background-color: var(--accent-color-blue);
@@ -358,7 +358,7 @@ body{
     border-radius: 4px;
     transition-property: background-color, fill, border;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon:hover, .client-icon:focus {
     background-color: var(--accent-color-white);
@@ -384,7 +384,7 @@ body{
     font-style: normal;
     transition-property: color;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-nav .adress:hover,
 .footer-nav .adress:focus {
@@ -397,7 +397,7 @@ body{
     font-style: normal;
     transition-property: color;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-nav .contacts:hover,
 .footer-nav .contacts:focus {
@@ -440,7 +440,7 @@ body{
     background-color: var(--footer-background-icon);
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link-footer:hover, .socials-link-footer:focus {
@@ -470,7 +470,7 @@ body{
     text-align: center;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wrapper {
     padding: 20px 24px;
@@ -497,7 +497,7 @@ body{
 .portfolio-examples-link {
     transition-property: box-shadow;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-examples-link:hover, .shadow-services:focus {
     display: block;
@@ -519,14 +519,15 @@ body{
     transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 63px 24px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
 }
-.portfolio-examples-link:hover .portfolio-overlay {
+.portfolio-examples-link:hover .portfolio-overlay,
+.portfolio-examples-link:focus .portfolio-overlay {
     transform: translateY(0);
 }
 
@@ -566,6 +567,9 @@ body{
     width: 100%;
     height: 100%;
     background: var(--background-backdrop);
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     display: flex;
